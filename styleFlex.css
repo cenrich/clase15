@@ -1,0 +1,24 @@
+#contenedor {
+    background: #cccccc;
+    display:flex;
+    height:200px;
+    justify-content:center; /*alinea donde empieza el contenedor*/
+    align-items:center; /*como ocupa todo el ancho, en este caso no hace nada*/
+    
+
+}
+
+.item {
+    flex-grow:1; /*acá medio cualquier númer da igual, es la base de cálculo. si pongo esto solo, no se ve nada*/
+    flex-shrink: 3; 
+    flex-basis: 50px; 
+    background: #777;
+    height:50px;
+    margin-bottom: 5px;
+}
+
+.item-2 {
+    flex-grow:2; /*esto quiere decir que este elemento crece el doble con cada unidad 
+    que crezca el "ítem"; es decir, item-2 es el doble de los otros hermanos. La relación de valores puede ser cualquiera*/
+    flex-shrink:1;
+}
